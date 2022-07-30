@@ -1,9 +1,9 @@
-import {axiosService} from "./axios.service";
-import {urls} from "./constants";
+import {urls,axiosService} from './index'
+
 
 const apiService  = {
  getAll: () => axiosService.get(urls.movies),
- getImage: (path)=>axiosService.get(`${urls.images}${path}`)
+ search:(obj) => axiosService.get(`${urls.search+obj}`)
 }
 
 export {apiService};

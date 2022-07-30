@@ -1,0 +1,70 @@
+.poster{
+    width: 250px;
+    height: 420px;
+
+    box-sizing: border-box;
+
+    background-color: #3f424c;
+    box-shadow: 5px 5px 5px black;
+
+    overflow: hidden;
+
+    margin: 1rem;
+    border-radius: 5px;
+
+    position: relative;
+
+}
+.poster img{
+    height: 340px;
+    width: 100%;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.info{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: aliceblue;
+
+    height: 80px;
+    width: 250px;
+
+    box-sizing: border-box;
+    padding: 7px;
+
+}
+
+.info h3{
+    font-size: 18px;
+}
+
+.details{
+    padding: 10px;
+
+    position: absolute;
+    bottom: 0;
+    right:0;
+    left:0;
+
+
+    transform: translateY(100%);
+    transition: all 0.3s;
+
+    color: aliceblue;
+    background-color: #3f424c;
+
+    border-radius: 5px;
+}
+
+.poster:hover .details{
+    transform: translateY(0%);
+
+
+}
+
+

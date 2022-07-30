@@ -1,16 +1,22 @@
 import {urls} from "../../services";
-import css from './movie.module.css';
+import css from "./poster.module.css";
 
 export default function Movie({movie}){
 
-    const {title,poster_path,vote_average} = movie;
+    const {title,overview,vote_average,poster_path} = movie;
 
     return(
-        <div >
-            <h3>Title {title}</h3>
-            <img src={`${urls.images+poster_path}`} alt={`${title}`}/>
-            <span>{vote_average}</span>
-
+        <div className={css.poster}>
+            <div className={css.picture}>
+                <img src={urls.images+poster_path} alt={''}/>
+            </div>
+            <div className={css.info}>
+                <h3>{title}</h3>
+                <span>{vote_average}/10</span>
+            </div>
+            <div className={css.details}>
+                <p>{overview}</p>
+            </div>
 
         </div>
     )

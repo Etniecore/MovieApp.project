@@ -1,0 +1,32 @@
+.header{
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-top: 10px;
+
+}
+.header input{
+    height: 50px;
+    width: 250px;
+    margin-right: 50px;
+
+}
+
+.search{
+    font-family: inherit;
+    font-size: 1rem;
+
+    border: 2px solid gray;
+    border-radius: 30px;
+
+    color: aliceblue;
+    background-color: transparent;
+    box-shadow:  5px 5px 5px black;
+
+    padding: 15px;
+
+}

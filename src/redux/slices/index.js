@@ -1,1 +1,3 @@
-export * from './MoviesSlice/MoviesSlice'
+import {moviesReducer, moviesActions} from "./MoviesSlice/MoviesSlice";
+
+export {moviesReducer,moviesActions};

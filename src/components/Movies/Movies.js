@@ -1,24 +1,44 @@
-import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
+import {useEffect} from "react";
 
-import Movie from "../Movie/Movie";
 import {moviesActions} from "../../redux/slices";
+import {Movie} from "../index";
+import css from './container.module.css'
+import Search from "../SearchBar/Search";
 
-export default function Movies(){
-    const{movies} = useSelector(state=>state.movies);
-    const dispatch =useDispatch();
-    const {results} = movies;
 
-    useEffect(()=>{
+export default function Movies() {
+    const dispatch = useDispatch();
+    useEffect(() => {
         dispatch(moviesActions.getAll())
-    },[])
-    return(
+    }, [dispatch])
+
+    const {movies,search} = useSelector(state => state.moviesReducer);
+
+    const {results} = movies;
+    const {results:found} = search;
+
+
+    return (
         <div>
-            {results.map((movie,index)=>
+            <div>
+                <Search/>
+            </div>
+            <div className={css.container} >
+        {results && results.map((movie,index)=>
             <Movie
-                key ={index}
-                movie={movie}
-            />)}
+                key={index}
+                movie={movie}/>
+        )}
+            </div>
+            <div className={css.container}>
+                {found && found.map((movie,index)=>
+                <Movie
+                    key={index}
+                    movie={movie}
+                />
+                )}
+            </div>
 
         </div>
     )

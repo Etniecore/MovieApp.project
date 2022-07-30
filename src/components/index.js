@@ -1,2 +1,5 @@
-export * from './Movie';
-export * from './Movies'
+import Movie from "./Movie/Movie";
+import Movies from "./Movies/Movies";
+
+export {Movies,Movie}
+
