@@ -4,7 +4,7 @@ import {useEffect} from "react";
 import {moviesActions} from "../../redux/slices";
 import {Movie} from "../index";
 import css from './container.module.css'
-import Search from "../SearchBar/Search";
+
 
 
 export default function Movies() {
@@ -21,9 +21,6 @@ export default function Movies() {
 
     return (
         <div>
-            <div>
-                <Search/>
-            </div>
             <div className={css.container} >
         {results && results.map((movie,index)=>
             <Movie

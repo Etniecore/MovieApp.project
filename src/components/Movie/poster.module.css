@@ -24,32 +24,48 @@
 }
 
 .info{
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    color: aliceblue;
 
     height: 80px;
     width: 250px;
 
     box-sizing: border-box;
     padding: 7px;
-
 }
 
 .info h3{
     font-size: 18px;
+    color: aliceblue;
+}
+.info span{
+    height: 27px;
+    width: 27px;
+    border-radius: 5px;
+
+    background-color: #282c34;
+
+    text-align: center;
+
 }
 
+
 .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
     padding: 10px;
 
     position: absolute;
     bottom: 0;
     right:0;
     left:0;
+
+    overflow: auto;
+    max-height: 100%;
 
 
     transform: translateY(100%);
@@ -60,11 +76,35 @@
 
     border-radius: 5px;
 }
+.details button{
+    border: 1px solid aliceblue;
+    border-radius: 15px;
 
+    color: aliceblue;
+    background-color: transparent;
+
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
 .poster:hover .details{
     transform: translateY(0%);
 
-
 }
+
+span{
+    font-size: 18px;
+}
+.green{
+    color: #15b115;
+}
+.orange{
+    color: #d9800d;
+}
+.red{
+    color: #d40505;
+}
+
+
 
 

@@ -4,6 +4,8 @@ import css from "./search.module.css";
 import {useDispatch} from "react-redux";
 import {moviesActions} from "../../redux/slices";
 
+import { FaSearch } from "react-icons/fa";
+
 
 export default function Search() {
 
@@ -20,6 +22,7 @@ export default function Search() {
     return (
         <div>
             <div className={css.header}>
+                <FaSearch style={{color:'grey', fontSize: '35px', marginRight:'10px'}}/>
                 <form onSubmit={handleSubmit(submit)}>
                     <input className={css.search}
                            type={"search"}
