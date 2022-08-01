@@ -1,8 +1,14 @@
+import {Navigation, Logo, Search} from "../index";
+
+import css from "./header.module.css";
+
 
 export default function Header() {
     return (
-        <div>
-            <h2 style={{color:'white'}}>Movies/Genres</h2>
+        <div className={css.header}>
+            <Logo/>
+            <Navigation/>
+            <Search/>
         </div>
     )
 }

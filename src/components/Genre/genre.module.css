@@ -1,0 +1,15 @@
+.genreTag:hover{
+    background-color: #2ebddc;
+}
+.genreTag:focus{
+    background-color: #2ebddc;
+}
+
+.genreTag{
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: bold;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+}

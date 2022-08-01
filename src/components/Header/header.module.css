@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    color: aliceblue;
+
+    font-family: Calibri, serif;
+    font-size: 30px;
+    font-weight: bold;
+    user-select: none;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 10px;
+}
+
+.header button{
+    background-color: transparent;
+    margin-right: 24px;
+
+
+    font-family: Calibri, serif;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 30px;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.header button:hover{
+    color: #2ebddc;
+
+}

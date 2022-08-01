@@ -25,7 +25,7 @@ export default function Movie({movie}){
 
     return(
         <div className={css.poster}>
-            <div className={css.picture}>
+            <div onClick={()=> navigate('details',{state:movie})} className={css.picture}>
                 <img src={poster_path?
                     urls.images+poster_path : 'https://media.istockphoto.com/vectors/page-not-found-error-with-film-flap-design-vector-id1265221960?k=20&m=1265221960&s=170667a&w=0&h=jCITUlo5a7s5fue3XrX2WB8FOK9VnbaWeLCHB8Ovj-c='} alt={title}/>
             </div>

@@ -3,7 +3,7 @@ import css from "./movie.details.module.css";
 
 export default function MovieDetails({movie}) {
 
-    const {genre_id, title, overview, backdrop_path, poster_path, id, vote_average, release_date} = movie;
+    const {title, overview, backdrop_path,vote_average, release_date} = movie;
 
     return (
         <div>

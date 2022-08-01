@@ -1,7 +1,12 @@
+import {Outlet} from "react-router-dom";
+
+import {Genres} from "../components";
+
 export default function GenresPage(){
     return(
         <div>
-            List of Genres
+           <Genres/>
+            <Outlet/>
         </div>
     )
 }
