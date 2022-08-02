@@ -11,12 +11,14 @@ export default function Genre({genre}) {
     const navigate = useNavigate();
     const {name, id} = genre;
 
+
     return (
         <div className={css.genres}>
             <button className={css.genreTag}
                 onClick={() => {
                     navigate('movies')
                     dispatch(moviesActions.getByGenre({id: id}))
+                    localStorage.setItem('id', id)
                 }}>
                 {name}
             </button>

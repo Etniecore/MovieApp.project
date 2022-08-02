@@ -7,26 +7,25 @@
     align-items: center;
 
     padding-top: 10px;
-
 }
+
 .header input{
     height: 50px;
-    width: 250px;
+    width: 280px;
     margin-right: 50px;
 
-}
+    font-size: 20px;
+    font-family: Calibri, serif;
+    font-weight: bold;
 
-.search{
-    font-family: inherit;
-    font-size: 1rem;
+    color: cornflowerblue;
 
-    border: 2px solid gray;
+    border: 3px solid gray;
     border-radius: 30px;
 
-    color: aliceblue;
     background-color: transparent;
     box-shadow:  5px 5px 5px black;
 
     padding: 15px;
-
 }
+

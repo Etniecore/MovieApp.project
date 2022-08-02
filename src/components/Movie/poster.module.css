@@ -1,16 +1,17 @@
 .poster{
-    width: 260px;
-    height: 420px;
+    width: 280px;
+    height: 440px;
 
     box-sizing: border-box;
-
     background-color: #3f424c;
     box-shadow: 5px 5px 5px black;
-
     overflow: hidden;
-
-    margin: 1rem;
     border-radius: 5px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 40px;
+    margin-left: 40px;
 
     position: relative;
 
@@ -18,7 +19,7 @@
 
 }
 .poster img{
-    height: 340px;
+    height: 360px;
     width: 100%;
 
     border-top-right-radius: 5px;

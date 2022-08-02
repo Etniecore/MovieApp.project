@@ -1,23 +1,19 @@
 .header{
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-
-    color: aliceblue;
-
-    font-family: Calibri, serif;
-    font-size: 30px;
-    font-weight: bold;
     user-select: none;
-
+    margin:15px;
 }
+
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .logo img{
     height: 50px;
     width: 50px;
@@ -39,7 +35,16 @@
     border: none;
     outline: none;
 }
-.header button:hover{
+.btn1:hover{
     color: #2ebddc;
+    font-size: 35px;
 
+    text-shadow: 5px 5px 5px black;
+}
+
+.btn2:hover{
+    color: #2ebddc;
+    font-size: 35px;
+
+    text-shadow: 5px 5px 5px black;
 }

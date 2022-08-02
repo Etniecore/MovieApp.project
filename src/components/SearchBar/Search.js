@@ -27,8 +27,7 @@ export default function Search() {
             <div className={css.header}>
                 <FaSearch style={{color:'grey', fontSize: '35px', marginRight:'10px'}}/>
                 <form onSubmit={handleSubmit(submit)}>
-                    <input className={css.search}
-                           type={"search"}
+                    <input type={"search"}
                            placeholder={'Type here to search'}
                            {...register('search')}
                     />

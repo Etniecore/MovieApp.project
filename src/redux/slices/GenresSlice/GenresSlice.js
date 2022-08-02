@@ -7,7 +7,6 @@ const initialState = {
     genreList: []
 }
 
-
 const genresSlice = createSlice({
     name: 'genreSlice',
     initialState,
@@ -17,10 +16,7 @@ const genresSlice = createSlice({
             .addCase(getGenres.fulfilled,(state,action) =>{
                 state.errors = null;
                 state.genreList = action.payload;
-
             } )
-
-
             .addDefaultCase( (state,action)=>{
                 const [type] = action.type.split('/').splice(-1);
                 if(type === 'rejected'){
