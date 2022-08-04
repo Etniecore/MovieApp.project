@@ -17,6 +17,12 @@
     font-weight: bold;
     font-size: 16px;
 
+    background-color: black;
+    height: 25px;
+
+    border-radius: 5px;
+
+
     display: none;
 }
 .user img:hover +p{

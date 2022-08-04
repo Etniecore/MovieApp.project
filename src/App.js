@@ -25,7 +25,6 @@ function App() {
                 <Route path={'genres/movies/details'} element ={<MovieDetailsPage/>}/>
             </Route>
         </Routes>
-
     );
 }
 

@@ -1,5 +1,5 @@
 import {useDispatch, useSelector} from "react-redux";
-import {useSearchParams} from "react-router-dom";
+import {useLocation, useSearchParams} from "react-router-dom";
 
 import {Movie} from "../components";
 import css from "./genreblock.module.css";
@@ -11,7 +11,9 @@ import {moviesActions} from "../redux/slices";
 export default function MoviesByGenrePage() {
 
     const genreId = localStorage.getItem('id');
-
+    const location = useLocation();
+    console.log(location.state);
+    console.log(genreId);
     const dispatch = useDispatch();
 
     const [query, setQuery] = useSearchParams({page: '1'});

@@ -17,21 +17,23 @@
     font-family: Calibri, serif;
     font-weight: bold;
 
-    color: cornflowerblue;
+    color: #2ebddc;
 
-    border: 3px solid gray;
+    border: 3px solid black;
     border-radius: 30px;
 
     background-color: transparent;
-    box-shadow:  5px 5px 5px black;
+    box-shadow:  3px 3px 3px black;
 
     padding: 15px;
+    margin-bottom: 10px;
 }
 
 .icon{
-    color:gray;
+    color: black;
     font-size: 40px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 

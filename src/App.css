@@ -1,8 +1,10 @@
 body{
-  background-color: #282c34;
+  background-color: #2a2e37;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color:white;
 
   user-select: none;
+
 }

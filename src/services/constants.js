@@ -7,7 +7,8 @@ const urls = {
     genres: `/genre/movie/list?api_key=${apiKey}`,
     byGenre: `/discover/movie?api_key=${apiKey}&with_genres=`,//id of genre
     images: `https://image.tmdb.org/t/p/original`,//+path
-    search: `/search/movie?api_key=${apiKey}&language=en-US&query=`//+name of the film
+    search: `/search/movie?api_key=${apiKey}&language=en-US&query=`,//+name of the film
 }
 
 export {apiKey,urls,baseURL};
+
