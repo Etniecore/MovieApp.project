@@ -1,9 +1,26 @@
+import {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+
+
 import {urls} from "../../services";
 import css from "./movie.details.module.css";
+import {castActions} from "../../redux/slices";
+import {Actors} from "../index";
 
 export default function MovieDetails({movie}) {
 
-    const {title, overview, backdrop_path,vote_average, release_date} = movie;
+    const {id,title, overview, backdrop_path,vote_average, release_date} = movie;
+
+    console.log(id);
+    const dispatch = useDispatch();
+
+    const {actors} = useSelector(state=>state.castReducer);
+    const {cast} = actors;
+    console.log(cast);
+
+    useEffect(()=>{
+        dispatch(castActions.getCast({id:id}))
+    },[dispatch,id])
 
     return (
         <div>
@@ -23,6 +40,10 @@ export default function MovieDetails({movie}) {
                 <p>{overview}</p>
                 <button>Watch</button>
             </div>
+            <div className={css.cast}>
+                {cast&&<Actors cast={cast}/>}
+            </div>
+
         </div>
     )
 }
