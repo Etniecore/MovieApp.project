@@ -1,5 +1,5 @@
 .header{
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,8 +23,7 @@
 
 .header button{
     background-color: transparent;
-    margin-right: 24px;
-
+    margin-right: 80px;
 
     font-family: Calibri, serif;
     color: aliceblue;
@@ -37,14 +36,18 @@
 }
 .btn1:hover{
     color: #2ebddc;
-    font-size: 35px;
-
     text-shadow: 5px 5px 5px black;
 }
 
 .btn2:hover{
     color: #2ebddc;
-    font-size: 35px;
-
     text-shadow: 5px 5px 5px black;
+}
+
+.btn1:focus{
+    color: #2ebddc;
+}
+
+.btn2:focus{
+    color: #2ebddc;
 }

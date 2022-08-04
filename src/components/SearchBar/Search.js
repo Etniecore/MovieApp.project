@@ -25,7 +25,7 @@ export default function Search() {
     return (
         <div>
             <div className={css.header}>
-                <FaSearch style={{color:'grey', fontSize: '35px', marginRight:'10px'}}/>
+                <FaSearch className={css.icon} />
                 <form onSubmit={handleSubmit(submit)}>
                     <input type={"search"}
                            placeholder={'Type here to search'}

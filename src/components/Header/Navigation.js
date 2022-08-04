@@ -8,7 +8,7 @@ export default function Navigation(){
     const navigate = useNavigate();
     return(
         <div className={css.header}>
-            <button className={css.btn1}> Movies </button>
+            <button className={css.btn1} onClick={()=> navigate('movies')}> Movies </button>
             <button className={css.btn2} onClick={()=>navigate('genres')}> Genres </button>
         </div>
     )

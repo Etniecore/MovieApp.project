@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.main img {
+    width: 100vw;
+    height: 35vw;
+
+    border-radius: 10px;
+}
+
+.main{
+    color: aliceblue;
+    text-shadow: 5px 5px 5px black;
+}

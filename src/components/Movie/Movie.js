@@ -23,6 +23,7 @@ export default function Movie({movie}){
         }
     }
 
+
     return(
         <div className={css.poster}>
             <div onClick={()=> navigate('details',{state:movie})} className={css.picture}>

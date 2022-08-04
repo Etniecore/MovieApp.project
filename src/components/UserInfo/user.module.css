@@ -1,0 +1,24 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+}
+.user img {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50px;
+}
+.user p{
+    position:absolute;
+    color: aliceblue;
+    top:80px;
+    font-weight: bold;
+    font-size: 16px;
+
+    display: none;
+}
+.user img:hover +p{
+ display: block;
+}

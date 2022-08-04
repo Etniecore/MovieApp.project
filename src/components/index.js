@@ -7,7 +7,10 @@ import Logo from "./Header/Logo";
 import Navigation from "./Header/Navigation";
 import Genres from "./Genres/Genres";
 import Genre from "./Genre/Genre";
+import CarouselComponent from "./Carousel/CarouselComponent";
+import UserInfo from "./UserInfo/UserInfo";
 
 
-export {Movies,Movie,Search,Header,MovieDetails,Navigation,Logo,Genres,Genre};
+
+export {Movies,Movie,Search,Header,MovieDetails,Navigation,Logo,Genres,Genre,CarouselComponent,UserInfo};
 

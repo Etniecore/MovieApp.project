@@ -14,6 +14,7 @@ export default function MovieDetails({movie}) {
             <div className={css.heading}>
                 <h1>{title} </h1>
             </div>
+
             <div className={css.content}>
                 <span>
                 <img src={'https://pbs.twimg.com/profile_images/1243623122089041920/gVZIvphd_400x400.jpg'} alt={''}/>

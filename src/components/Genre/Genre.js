@@ -16,7 +16,7 @@ export default function Genre({genre}) {
         <div className={css.genres}>
             <button className={css.genreTag}
                 onClick={() => {
-                    navigate('movies')
+                    navigate('movies',{state:id})
                     dispatch(moviesActions.getByGenre({id: id}))
                     localStorage.setItem('id', id)
                 }}>

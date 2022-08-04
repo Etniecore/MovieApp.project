@@ -1,12 +1,10 @@
 .background img{
     height: 100%;
     width: 100%;
-
-    filter:blur(2px);
 }
 
-.heading{
-    font-size: 40px;
+.heading h1{
+    font-size: 70px;
     font-family: Calibri, serif;
     text-shadow: 5px 2px 5px black;
 
@@ -27,19 +25,16 @@
     font-size: 20px;
     font-weight: bold;
 
-
     position: absolute;
     top: 250px;
     left: 100px;
 
-
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black
-
 }
 
-.content img {
-    height: 18px;
+.content img{
+    height: 20px;
     width: 25px;
 
     border-radius: 4px;

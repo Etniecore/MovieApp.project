@@ -6,10 +6,11 @@
 }
 
 .genreTag{
-    font-size: 18px;
+    font-size: 17px;
     font-family: Calibri, serif;
     font-weight: bold;
     height: 50px;
     width: 120px;
     border-radius: 5px;
+
 }

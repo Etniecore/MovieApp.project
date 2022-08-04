@@ -12,14 +12,14 @@ export default function Movies() {
 
     const [query, setQuery] = useSearchParams({page: '1'});
 
-    const {movies,page} = useSelector(state => state.moviesReducer);
+    const {movies} = useSelector(state => state.moviesReducer);
 
     useEffect(() => {
         dispatch(moviesActions.getAll({page: query.get('page')}))
     }, [dispatch,query]);
 
     const {results} = movies;
-    console.log(page);
+
 
     const prevPage = () => {
         const page = +query.get('page')-1;
