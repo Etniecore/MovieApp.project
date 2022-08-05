@@ -1,22 +1,20 @@
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-
 import {urls} from "../../services";
 import css from "./movie.details.module.css";
 import {castActions} from "../../redux/slices";
-import {Actors} from "../index";
+import {Actors, StarRating} from "../index";
+
 
 export default function MovieDetails({movie}) {
 
     const {id,title, overview, backdrop_path,vote_average, release_date} = movie;
 
-    console.log(id);
     const dispatch = useDispatch();
 
     const {actors} = useSelector(state=>state.castReducer);
     const {cast} = actors;
-    console.log(cast);
 
     useEffect(()=>{
         dispatch(castActions.getCast({id:id}))
@@ -35,7 +33,8 @@ export default function MovieDetails({movie}) {
             <div className={css.content}>
                 <span>
                 <img src={'https://pbs.twimg.com/profile_images/1243623122089041920/gVZIvphd_400x400.jpg'} alt={''}/>
-                    {vote_average}/10 Release date: {release_date}</span>
+                     {vote_average} / 10 Release date : {release_date}</span>
+                <StarRating/>
                 <h2>Overview</h2>
                 <p>{overview}</p>
                 <button>Watch</button>

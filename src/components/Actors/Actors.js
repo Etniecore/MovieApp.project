@@ -4,7 +4,7 @@ export default function Actors({cast}){
     return(
         <div>
             <div>
-                <h1>Main characters</h1>
+                <h1>Main actors</h1>
                 <img src={urls.images+cast[0].profile_path} alt={cast[0].name}/>
                 <p> {cast[0].name}</p>
             </div>

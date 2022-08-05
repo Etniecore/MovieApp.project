@@ -10,8 +10,8 @@ import Genre from "./Genre/Genre";
 import CarouselComponent from "./Carousel/CarouselComponent";
 import UserInfo from "./UserInfo/UserInfo";
 import Actors from "./Actors/Actors";
+import StarRating from "./Rating/StarRating";
 
 
-
-export {Movies,Movie,Search,Header,MovieDetails,Navigation,Logo,Genres,Genre,CarouselComponent,UserInfo,Actors};
+export {Movies,Movie,Search,Header,MovieDetails,Navigation,Logo,Genres,Genre,CarouselComponent,UserInfo,Actors,StarRating};
 
